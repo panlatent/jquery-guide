@@ -39,7 +39,6 @@ v1.0.0
 				isBeforeFuncExec: true,
 				beforeFunc: function(g) {
 					$('#domeGithubBtn').slideDown(function() {
-						console.log(g);
 						g.execAction();
 					});
 				}
