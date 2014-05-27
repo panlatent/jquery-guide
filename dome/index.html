@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery-Guide Dome</title>
+	<link rel="stylesheet" href="../style/default.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/dome.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<buttom class="btn btn-primary btn-lg" id="domeStartGuideBtn" onclick="domoGuide();">Start Guide</buttom>
+<div class="container">
+	<div class="panel panel-default" id="domeUsingPanel">
+		<div class="panel-heading">Using</div>
+		<div class="panel-body">
+			<pre>
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;jQuery-Guide Dome&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;../style/default.css&quot;&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;../jquery.guide.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var guide = $.guide({
+  actions: [
+  ]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+		</div>
+	</div>
+</div>
+<a href="https://github.com/panlatent/jquery-guide" class="btn btn-danger" id="domeGithubBtn">jQuery.Guide</a>
+<script type="text/javascript" src="../jquery.guide.js"></script>
+<script type="text/javascript">
+function domoGuide() {
+
+	var guide = $.guide({
+		actions: [
+			{
+				element: $('#domeStartGuideBtn'),
+				content: '<p>Welcome, click on the screen at any position to enter the next step</p>',
+				offsetX: -140,
+				offsetY: 60
+			},
+			{
+				element: $('#domeUsingPanel'),
+				content: '<p>How to using...</p>',
+				offsetX: -140,
+				offsetY: 0,
+				beforeFunc: function(g) {
+					$('#domeUsingPanel').fadeIn();
+				}
+			},
+			{
+				element: $('#domeGithubBtn'),
+				content: '<p>Click here to access the project for Github</p>',
+				offsetX: 0,
+				offsetY: 50,
+				isBeforeFuncExec: true,
+				beforeFunc: function(g) {
+					$('#domeUsingPanel').fadeOut();
+					$('#domeGithubBtn').slideDown(100, function() {
+						console.log(g);
+						g.execAction();
+					});
+				}
+			}
+		]
+	});
+
+}
+</script>
+</body>
+</html>
