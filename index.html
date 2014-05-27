@@ -68,7 +68,6 @@ function domoGuide() {
 				beforeFunc: function(g) {
 					$('#domeUsingPanel').fadeOut();
 					$('#domeGithubBtn').slideDown(100, function() {
-						console.log(g);
 						g.execAction();
 					});
 				}
