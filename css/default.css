@@ -1,0 +1,29 @@
+.jquery-guide,.jquery-guide-bg {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.jquery-guide-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-color: rgba(0, 0, 0, 0.6);
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+.jquery-guide-bg.active {
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+.jquery-guide-content {
+	position: absolute;
+	cursor: default;
+	color: #FFF;
+}
