@@ -1,5 +1,6 @@
 JQuery Guide
 ============
+[![Build Status](https://travis-ci.org/panlatent/jquery-guide.svg)](https://travis-ci.org/panlatent/jquery-guide)
 
 A jQuery plugin that new layout or new features using guide
 
