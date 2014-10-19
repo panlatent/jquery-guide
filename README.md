@@ -1,17 +1,17 @@
-jquery-guide
+JQuery Guide
 ============
 
 A jQuery plugin that new layout or new features using guide
 
-### Version
-
-v1.0.0
-
-### Dome
+### View the demo
 
 [http://panlatent.github.io/jquery-guide/](http://panlatent.github.io/jquery-guide/)
 
-### Using
+### How to use
+
+```html
+<script src="jquery.guide.js"></script>
+```
 
 ```javascript
 var guide = $.guide({
