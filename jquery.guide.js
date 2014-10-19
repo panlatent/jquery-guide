@@ -3,7 +3,6 @@
  *
  * @link    https://github.com/panlatent/jquery-guide
  * @author  panlatent@gmail.com
- * @version 1.0.1
  */
 
 ;(function($) {
