@@ -1,4 +1,4 @@
-JQuery Guide
+jQuery Guide
 ============
 [![Build Status](https://travis-ci.org/panlatent/jquery-guide.svg)](https://travis-ci.org/panlatent/jquery-guide)
 
