@@ -8,12 +8,24 @@ A jQuery plugin that new layout or new features using guide
 
 [http://panlatent.github.io/jquery-guide/](http://panlatent.github.io/jquery-guide/)
 
-### How to use
+### How to using
 
++ Download this library:
 ```html
 <script src="jquery.guide.js"></script>
 ```
 
++ Bower:
+bower.json:
+```json
+  {
+    "dependencies": {
+      "jquery-guide": "1.0.0"
+    }
+  }
+```
+
+### Example
 ```javascript
 var guide = $.guide({
 	actions: [

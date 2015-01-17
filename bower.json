@@ -1,0 +1,21 @@
+{
+  "name": "jquery-guide",
+  "version": "1.0.0",
+  "homepage": "https://github.com/panlatent/jquery-guide",
+  "authors": [
+    "panlatent <panlatent@gmail.com>"
+  ],
+  "description": "A jQuery plugin that new layout or new features using guide",
+  "main": "src/jquery.guide.js",
+  "keywords": [
+    "guide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
