@@ -20,7 +20,7 @@ bower.json:
 ```json
   {
     "dependencies": {
-      "jquery-guide": "1.0.0"
+      "jquery-guide": ">=1.0.0"
     }
   }
 ```
